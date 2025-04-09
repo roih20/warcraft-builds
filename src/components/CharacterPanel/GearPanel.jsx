@@ -69,8 +69,8 @@ const GearPanel = ({ realm , player, setError }) => {
             setError(false)
             setLoading(false)
           } catch (e) {
+            setLoading(false)
             setError(true)
-            console.error(e.message)
           }
         }
 

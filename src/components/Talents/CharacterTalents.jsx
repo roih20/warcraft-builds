@@ -1,7 +1,7 @@
 import SpecializationPanel from "./SpecializationPanel.jsx";
 
 const CharacterTalents = ({ specializations, specializationPanels }) => {
-  return <div className="flex flex-row gap-x-2.5 overflow-x-auto lg:overflow-hidden">
+  return <div className="flex flex-row gap-x-2.5 overflow-x-auto lg:overflow-hidden lg:grid lg:grid-cols-3">
     {
       specializations && specializations
         .sort((a, b) => a.specialization_name.localeCompare(b.specialization_name))

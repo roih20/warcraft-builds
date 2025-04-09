@@ -46,7 +46,6 @@ const TalentPanels = ({ player, realm, setError}) => {
         setLoading(false)
         setError(false)
       } catch (e) {
-        console.error(e.message)
         setLoading(false)
         setError(true)
       }

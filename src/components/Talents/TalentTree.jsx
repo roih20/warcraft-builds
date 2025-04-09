@@ -1,14 +1,14 @@
 
 
 const TalentTree = ({ talents, specName, specIcon, specBackground, spentPoints  }) => (
-  <div className="rounded-md w-72 flex-none lg:w-full lg:flex-auto">
+  <div className="w-72 flex-none lg:w-full lg:flex-auto">
     <div className="bg-slate-700 p-2 text-white flex gap-2.5 items-center text-lg">
       <img
         src={specIcon}
         width={32}
         height={32}
         className="rounded-full"
-        alt={"talent icon"}
+        alt="talent icon"
       />
       <b>{specName}</b>
       <span className="text-right flex-auto whitespace-nowrap font-bold">{spentPoints} / 41</span>

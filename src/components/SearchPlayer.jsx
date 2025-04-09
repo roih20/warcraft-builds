@@ -1,9 +1,12 @@
 import { useSearchParams} from "react-router-dom"
+import { useDebouncedCallback } from "use-debounce";
 
 const SearchPlayer  = ({ error }) => {
 
   const [searchParams, setSearchParams] = useSearchParams()
-  const handelSearch = (player) => {
+
+
+  const handelSearch = useDebouncedCallback((player) => {
     const newSearchParams = new URLSearchParams(searchParams)
     if (player) {
       newSearchParams.set("player", player)
@@ -12,7 +15,7 @@ const SearchPlayer  = ({ error }) => {
     }
 
     setSearchParams(newSearchParams)
-  }
+  }, 400)
 
 
   return (
