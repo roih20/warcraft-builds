@@ -1,8 +1,17 @@
-# React + Vite
+# Warcraft Builds
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project fetches character data using the World of Warcraft API to view player's equipment and talents. You can find a player by typing the player's name and selecting its respective server. 
 
-Currently, two official plugins are available:
+### Example 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In this example we searched the player **Notcow** 
+
+This is the player's equipment:
+
+![Notcow equipment](/src/assets/notcow-equipment.png)
+
+This is the player's talents: 
+
+![Notcow talents](/src/assets/notcow-talents.png)
+
+
