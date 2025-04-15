@@ -6,11 +6,11 @@ This project fetches character data using the World of Warcraft API to view play
 
 In this example we searched the player **Notcow** 
 
-This is the player's equipment:
+The player's equipment:
 
 ![Notcow equipment](/src/assets/notcow-equipment.png)
 
-This is the player's talents: 
+The player's talents: 
 
 ![Notcow talents](/src/assets/notcow-talents.png)
 
